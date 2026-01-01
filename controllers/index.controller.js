@@ -5,7 +5,7 @@ async function index(req, res) {
 }
 
 async function newMessageGet(req, res) {
-    res.render("form");
+    res.render("form", { title: "Mini Messageboard" });
 }
 
 async function newMessagePost(req, res) {
