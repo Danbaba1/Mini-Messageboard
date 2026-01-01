@@ -1,0 +1,15 @@
+<!-- message.details.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<%- include('header') %>
+<body>
+    <h1>Message Details</h1>
+
+    <div>
+        <h2>From: <%= message.user %></h2>
+        <p><strong>Posted on:</strong> <%= message.added %></p>
+        <p><strong>Message:</strong> <%= message.text %></p>
+    </div>
+    <a href="/">Back to Messages</a>
+</body>
+</html>

@@ -2,12 +2,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-</head>
+<%- include('header') %>
 <body>
+    <h1><%= title %></h1>
+    <a href="/new">Add New Message</a>
     <% for (let message of messages) { %>
         <ul>
             <li>
@@ -20,6 +18,7 @@
                 <div>
                     <%= message.text %>
                 </div>
+                <a href="/messages/<%= message.id %>" target="_blank">Open</a>
             </li>
         </ul>   
     <% } %>
